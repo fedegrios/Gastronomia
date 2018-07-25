@@ -54,6 +54,12 @@
       <DependentUpon>FormBase.cs</DependentUpon>
     </Compile>
     <Compile Include="Base\Clases\Identidad.cs" />
+    <Compile Include="Base\Formularios\FormConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Formularios\FormConsulta.Designer.cs">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Base\Helpers\Imagen.cs" />
     <Compile Include="Base\Helpers\Mjs.cs" />
     <Compile Include="Base\Helpers\Paleta.cs" />
@@ -71,6 +77,12 @@
     <EmbeddedResource Include="Base\Formularios\FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Base\Formularios\FormConsulta.resx">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,7 +112,24 @@
     <Folder Include="Core\Controles\" />
     <Folder Include="Core\PrimerAcceso\" />
     <Folder Include="LogicaNegocio\" />
-    <Folder Include="Recursos\Imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\Imagenes\actualizar.png" />
+    <Resource Include="Recursos\Imagenes\buscar.png" />
+    <Resource Include="Recursos\Imagenes\Config.png" />
+    <Resource Include="Recursos\Imagenes\eliminar.png" />
+    <Resource Include="Recursos\Imagenes\flecha_ant.png" />
+    <Resource Include="Recursos\Imagenes\flecha_sig.png" />
+    <Resource Include="Recursos\Imagenes\foto.png" />
+    <Resource Include="Recursos\Imagenes\imprimir.png" />
+    <Resource Include="Recursos\Imagenes\mjs_alert.png" />
+    <Resource Include="Recursos\Imagenes\mjs_error.png" />
+    <Resource Include="Recursos\Imagenes\mjs_ok.png" />
+    <Resource Include="Recursos\Imagenes\modificar.png" />
+    <Resource Include="Recursos\Imagenes\modo_cards.png" />
+    <Resource Include="Recursos\Imagenes\modo_lista.png" />
+    <Resource Include="Recursos\Imagenes\Nuevo.png" />
+    <Resource Include="Recursos\Imagenes\usuario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

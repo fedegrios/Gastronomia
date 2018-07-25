@@ -8,5 +8,10 @@ namespace Gastronomia
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+            new FormConsulta().ShowDialog();
+        }
     }
 }
